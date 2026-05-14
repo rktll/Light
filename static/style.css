@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ===== ФОНЫ ===== */
+
+/* оба увеличены в 1.5 раза */
+.bg-main {
+    background-image: url("/static/bg.png");
+    background-size: 125%;
+}
+
+.bg-roadmap {
+    background-image: url("/static/bg2.png");
+    background-size: 75%;
+}
+
+/* ===== БОКОВОЕ МЕНЮ ===== */
+
+.sidebar {
+    position: fixed;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a {
+    margin: 12px 0;
+    padding: 12px 22px;
+    background: #556b2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background: #6f8f3a;
+    transform: scale(1.05);
+}
+
+/* ===== ЦЕНТР ===== */
+
+.main {
+    text-align: center;
+    margin-top: 140px;
+}
+
+.main h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* поиск */
+.main input {
+    padding: 12px;
+    width: 260px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.main button {
+    padding: 12px 20px;
+    margin-left: 10px;
+    background: #556b2f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main button:hover {
+    background: #6f8f3a;
+}
+
+/* ===== ТАБЛИЦЫ (ПОЧИНИЛИ) ===== */
+
+table {
+    width: 85%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.95);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+th {
+    background: #556b2f;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* чередование строк */
+tr:nth-child(even) {
+    background: #f5f5f5;
+}
+
+/* hover эффект */
+tr:hover {
+    background: #e8f0d8;
+}
+
+/* ===== КНОПКА НАЗАД ===== */
+
+a {
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    padding: 10px 20px;
+    background: #556b2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #6f8f3a;
+}
+
+/* ===== ROADMAP КАРТА ===== */
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.map-container img {
+    width: 70%;
+    max-width: 900px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.main {
+    text-align: center;
+    margin-top: 140px;
+}
+
+.description {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #222;
+    background: rgba(255,255,255,0.8);
+    padding: 15px 20px;
+    border-radius: 12px;
+}
+
+/* ===== ГЛАВНЫЙ ЗАГОЛОВОК ===== */
+h1 {
+    display: inline-block;
+    padding: 14px 26px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.88);
+    border-radius: 16px;
+    color: #1f2a10;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(4px);
+}
+
+/* ===== ПОДЗАГОЛОВКИ ===== */
+h2 {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 15px auto;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    color: #2b3a16;
+    font-size: 24px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== МЕЛКИЕ ЗАГОЛОВКИ ===== */
+h3 {
+    color: #2f3d1a;
+    font-size: 20px;
+    font-weight: 600;
+}
